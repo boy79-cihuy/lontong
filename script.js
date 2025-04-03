@@ -1,14 +1,14 @@
 const messages = [
     "Kamu yakin!?",
     "Benerann??",
-    "benar benar benar yakinnn?",
-    "jangan please...",
+    "Benar benar benar yakinnn?",
+    "Nyesel luu...",
     "Pikirin lagi dongg!",
-    "kalo kamu bilang tidak aku sedih lho",
+    "Ngambek gue ni",
     "Beneran sedihhhh......",
     "Benar benar benar sedih",
     "Ok fine, I will stop asking...",
-    "Becanda beb, teken yes dongg❤️"
+    "Becanda... teken yes dong"
 ];
 
 let messageIndex = 0;
@@ -16,10 +16,18 @@ let messageIndex = 0;
 function handleNoClick() {
     const noButton = document.querySelector('.no-button');
     const yesButton = document.querySelector('.yes-button');
-    noButton.textContent = messages[messageIndex];
-    messageIndex = (messageIndex + 1) % messages.length;
-    const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
-    yesButton.style.fontSize = `${currentSize * 1.5}px`;
+
+    if (messageIndex < messages.length) {
+        noButton.textContent = messages[messageIndex];
+        messageIndex++;
+        const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+        yesButton.style.fontSize = `${currentSize * 1.5}px`;
+    }
+
+    // Setelah semua pesan habis, alihkan ke link
+    if (messageIndex === messages.length) {
+        window.location.href = "https://www.instagram.com/share/BANRKDeFTO";
+    }
 }
 
 function handleYesClick() {
