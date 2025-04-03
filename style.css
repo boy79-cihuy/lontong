@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: "Comic Sans MS", sans-serif;
+    flex-direction: column;
+    background-image: url('https://s.widget-club.com/images/YyiR86zpwIMIfrCZoSs4ulVD9RF3/eeab01b9d547c2d4111b04b36ad76635/029abda88744bb148aa88d5c434b2908.jpg?q=70&w=500');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f9e3e3;
+    text-align: center;
+    background-color: rgba(94, 78, 50, 0.7); /* Menggunakan RGBA dengan transparansi */
+    border-radius: 10%;
+    width: 90%;  /* Menggunakan persen untuk lebar */
+    height: 80vh; /* Menggunakan vh (viewport height) untuk tinggi */
+  }
+  
+  @media (max-width: 1000px) {
+    .container {
+      width: 95%;  /* Lebar container akan semakin besar pada layar kecil */
+      height: 70vh; /* Menyesuaikan tinggi untuk layar kecil */
+    }
+  }
+  
+  h1 {
+    font-size: 50px;
+    color: #ffffff;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .yes-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .no-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
