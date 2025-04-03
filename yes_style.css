@@ -63,7 +63,12 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
- 
+  .buttons {
+    display: flex;
+    justify-content: center; /* Menengahkan secara horizontal */
+    align-items: center; /* Menengahkan secara vertikal (opsional) */
+    margin-top: 20px; /* Jarak atas agar lebih rapi */
+  }
   
 .container {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
