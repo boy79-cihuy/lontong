@@ -11,7 +11,8 @@
         <h1 class="header_text">UNTUK BOCIL GORILLA GUEE!!! </h1>
         <div id="quiz-container">
         <h2>Tebak-Tebakan!</h2>
-        <p id="question">Apa yang naik tapi tidak pernah turun?</p>
+        <p id="question">Apa rasa favorit lontong yang bisa bikin ampe overdosis?
+        </p>
         <input type="text" id="answer" placeholder="Jawaban kamu...">
         <button onclick="checkAnswer()">Submit</button>
         <div id="result-container">
@@ -29,11 +30,11 @@
                         
                         Semoga di usia yang baru ini, kamu makin keren, makin sukses, dan jangan lupa... makin sering traktir gue ya! 😜 <br> <br>
                         
-                        Jangan cuma sibuk berdoa biar dapat jodoh, tapi juga berdoa biar dompetmu tebal dan penuh rezeki! 💰<br> <br>
+                        Jangan cuma sibuk berdoa biar dapat jodoh ma dikta, tapi juga berdoa biar dompetmu tebal dan penuh rezeki! 💰<br> <br>
                         
                         Semoga segala cita-cita tercapai, tapi jangan lupa juga, jangan cuma cita-cita yang dikejar, tapi kenyataannya juga! 😅<br> <br>
                         
-                        Happy Birthday, semoga tahun ini lebih seru daripada nonton sinetron tiap sore!</p>
+                        Happy Birthday, semoga tahun ini lebih seru daripada nonton windah tiap sore!</p>
                 </div>
                 
             </div>
@@ -42,34 +43,42 @@
     </div>
 
     <script>
-        function checkAnswer() {
-            const correctAnswer = "umur";
-            const userAnswer = document.getElementById("answer").value.toLowerCase();
-            const resultText = document.getElementById("result");
-            const resultMessage = document.getElementById("result-text");
-            const resultVideo = document.getElementById("result-video");
-            const heading = document.getElementById("heading");
-            
-            if (userAnswer === correctAnswer) {
-                resultText.innerHTML = "MANTAP BOKEM!! 🎉";
-                resultText.style.color = "green";
-                resultText.style.background = "white";
-                resultVideo.style.display = "block";  // Menampilkan video jika benar
-                resultMessage.style.display = "block";
-                 heading.style.display = "block";
-            } else {
-                resultText.innerHTML = "AH PAYAH MASA SALAH, ULANG ULANG!!! ❌";
-                resultText.style.color = "red";
-                resultText.style.background = "white"
-                resultVideo.style.display = "none";  // Menyembunyikan video jika salah
-                resultMessage.style.display = "none";
-                heading.style.display = "none";
-            }
-        }
+       function checkAnswer() {
+    const correctAnswer = "matcha";
+    const userAnswer = document.getElementById("answer").value.toLowerCase();
+    const resultText = document.getElementById("result");
+    const resultMessage = document.getElementById("result-text");
+    const resultVideo = document.getElementById("result-video");
+    const heading = document.getElementById("heading");
+    const button = document.querySelector(".Kembali-btn");  // Pilih tombol berdasarkan class
+
+    // Cek jika jawaban benar
+    if (userAnswer === correctAnswer) {
+        resultText.innerHTML = "NAH INI BARU BOKEM LONTONG!! 🎉";
+        resultText.style.color = "green";
+        resultText.style.background = "white";
+        resultVideo.style.display = "block";  // Menampilkan video jika benar
+        resultMessage.style.display = "block";
+        heading.style.display = "block";  // Menampilkan heading
+        button.style.display = "block";  // Menampilkan tombol
+    } else {
+        resultText.innerHTML = "AH PAYAH MASA SALAH, GA BAKAL GUE TRAKTIR LAGI NIIH!!! ❌";
+        resultText.style.color = "red";
+        resultText.style.background = "white";
+        resultVideo.style.display = "none";  // Menyembunyikan video jika salah
+        resultMessage.style.display = "none";
+        heading.style.display = "none";  // Menyembunyikan heading
+        button.style.display = "none";  // Menyembunyikan tombol
+    }
+}
+
     </script>
        
         <div class="buttons">
-            <button class="Kembali-btn" onclick="window.location.href='index.html'">Kembali</button>
+            <div class="buttons">
+                <button class="Kembali-btn" onclick="window.location.href='https://wa.me/62881038493181'" style="display: none;">CLICK</button>
+            </div>
+            
         </div>
     </div>
 </body>
